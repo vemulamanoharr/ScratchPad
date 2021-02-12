@@ -1,14 +1,24 @@
 package sortPractise;
 
+import java.util.ArrayList;
+import java.util.Arrays;
+import java.util.List;
+
 public class SortHelper {
 
 	public static void main(String[] args) {
-		int [] a = new int[] {6,3,1,8,2,0,17,5};		
-		BubbleSort ss = new BubbleSort();
-		int [] b = ss.bubbleSort(a);
-		for (int i =0 ;i<=b.length-1;i++){
-			System.out.println(b[i]);
+//		List <Integer> a = Arrays.asList(6,3,1,8,2,0,17,5);		
+//		MergeSortList ss = new MergeSortList();
+//		List <Integer> b = ss.merge_sort(a);
+		
+		
+		int [] arr = new int [] {6,3,1,8,2,0,17,5};
+		QuickSort qs = new QuickSort();
+		qs.quickSort(arr);
+		for(int i= 0; i<arr.length;i++) {
+			System.out.println(arr[i]);
 		}
+		
 	}
 
 }
